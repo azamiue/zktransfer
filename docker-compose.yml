@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  autoair-lp:
+    image: autoair-lp
+    deploy:
+      labels:
+        - "traefik.enable=true"
+        - "traefik.http.routers.autoair-lp.entrypoints=web"
+        - "traefik.http.routers.autoair-lp-router.rule=Host(`autoair-lp.hsdev.one`)"
+        - "traefik.http.services.autoair-lp-service.loadbalancer.server.port=3000"
+    networks:
+      - public
+
+networks:
+  public:
+    external: true

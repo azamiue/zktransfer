@@ -1,0 +1,21 @@
+{
+  "editor.formatOnSaveMode": "file",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "cSpell.words": [
+    "datamodel",
+    "ethersproject",
+    "holdstation",
+    "Keychain",
+    "notifee",
+    "Quantile",
+    "referralname",
+    "striptags",
+    "Swipable"
+  ],
+  "git.ignoreLimitWarning": true,
+  "eslint.workingDirectories": [{ "directory": "packages/wallet", "changeProcessCWD": true }]
+}

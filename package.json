@@ -1,0 +1,50 @@
+{
+  "name": "dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typechain": "typechain --target ethers-v5 --out-dir ./src/contract './src/abi/*.json'"
+  },
+  "dependencies": {
+    "@next/third-parties": "^14.1.4",
+    "@nextui-org/react": "^2.2.10",
+    "@studio-freight/react-lenis": "^0.0.45",
+    "@typechain/ethers-v5": "^11.1.2",
+    "@types/node": "20.11.3",
+    "@types/react": "18.2.48",
+    "@types/react-dom": "18.2.18",
+    "@web3modal/ethers": "^4.1.1",
+    "@web3modal/ethers5": "^4.1.1",
+    "autoprefixer": "10.4.16",
+    "bignumber.js": "^9.1.2",
+    "classnames": "^2.5.1",
+    "clsx": "^2.1.0",
+    "dayjs": "^1.11.10",
+    "eslint": "8.56.0",
+    "eslint-config-next": "14.0.4",
+    "ethers": "5.7.2",
+    "framer-motion": "^11.0.3",
+    "gsap": "^3.12.5",
+    "next": "13.4.12",
+    "postcss": "8.4.33",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.51.1",
+    "react-number-format": "^5.3.4",
+    "react-toastify": "^10.0.5",
+    "react-tooltip": "^5.26.3",
+    "recharts": "^2.10.4",
+    "split-type": "^0.3.4",
+    "swr": "^2.2.5",
+    "tailwindcss": "3.4.1",
+    "typescript": "5.3.3",
+    "zksync-web3": "^0.17.1"
+  },
+  "devDependencies": {
+    "typechain": "^8.3.2"
+  }
+}
