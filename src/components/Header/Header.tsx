@@ -85,7 +85,7 @@ export function Header() {
         onClick={() => {
           sendGAEvent({ event: "buttonLaunchapp", value: " Launch App" });
         }}
-        href={"/staking"}
+        href={"/transfer"}
         className="absolute hidden lg:block right-[24px] top-[4px] px-[24px] py-[12px] rounded-full bg-white text-[15px] leading-[24px] text-black"
       >
         Launch App
