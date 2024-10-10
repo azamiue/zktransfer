@@ -1,14 +1,8 @@
 "use client";
-
-import { staking_data } from "@/containers/staking/layout/data";
-import classNames from "classnames";
 import { useAnimate } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useCallback, useEffect, useState } from "react";
-import { toast } from "react-toastify";
-import { NotFound } from "../not-found/not-found";
 
 import {
   Dropdown,
@@ -69,48 +63,10 @@ export function ModalHeaderDropDown() {
             base: "hover:!bg-white",
           }}
         >
-          <DropdownItem classNames={{ wrapper: "bg-white" }} textValue="12">
-            {staking_data.map((item, idx) => {
-              return (
-                <Link
-                  onClick={(e) => {
-                    const array_path = ["/staking-lp", "/staking"];
-
-                    if (!array_path.includes(item.path)) {
-                      e.preventDefault();
-                      setIsOpen(!isOpen);
-                      return toast.success(<NotFound />, {
-                        position: "top-center",
-                        className:
-                          "w-fit text-center !mx-auto !mb-[0px] !rounded-full !px-[24px] !py-[12px]",
-                        autoClose: 1500,
-                      });
-                    }
-                    setIsOpen(!isOpen);
-                  }}
-                  key={idx}
-                  href={item.path}
-                  className="flex items-center gap-[12px] p-[12px]"
-                >
-                  <Image
-                    src={item.path === pathname ? item.src1 : item.src}
-                    alt={item.title}
-                    width={24}
-                    height={24}
-                  />
-
-                  <p
-                    className={classNames(
-                      "text-[16px] leading-[24px] text-[#A7AEAD]",
-                      { "text-black": pathname === item.path }
-                    )}
-                  >
-                    {item.title}
-                  </p>
-                </Link>
-              );
-            })}
-          </DropdownItem>
+          <DropdownItem
+            classNames={{ wrapper: "bg-white" }}
+            textValue="12"
+          ></DropdownItem>
         </DropdownMenu>
       </Dropdown>
     </div>
