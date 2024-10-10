@@ -24,8 +24,8 @@ export function Header() {
     >
       <div className=" flex items-center justify-between gap-[18px] lg:gap-[56px] h-[56px] mx-[24px] md:mx-auto md:w-fit bg-white py-[8px] pr-[16px] pl-[22px] rounded-tr-[20px] rounded-bl-[20px]">
         <Link href={"/"} className="flex items-center gap-[4px] h-[16px]">
-          <Image src="/logo/logo.svg" alt="LOGO" width={28} height={16} />
-          <span className="font-medium leading-[16px]">AutoAir AI</span>
+          {/* <Image src="/logo/logo.svg" alt="LOGO" width={28} height={16} /> */}
+          <span className="font-medium leading-[16px]">ZKTransfer</span>
         </Link>
 
         <NavBar />

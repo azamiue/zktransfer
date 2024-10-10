@@ -4,7 +4,6 @@ import { HeaderLineProgress } from "@/components/HeaderLinePage";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
-import Link from "next/link";
 import { useLayoutEffect, useRef } from "react";
 import SplitType from "split-type";
 import { RoadMapYear } from "./RoadMap/RoadMapYear";
@@ -192,22 +191,9 @@ export function TechnicalRoad() {
 
       {/* Mobile View Without Transition */}
       <p className="text-[32px] lg:text-[48px] leading-[40px] lg:leading-[56px] text-black max-w-[1064px] mx-auto lg:text-center block lg:hidden">
-        Our roadmap is a dynamic blueprint designed to harness the synergy
-        between AutoAir AI&lsquo;s technological prowess and the visionary
-        investments of{" "}
-        <Link href="https://a16z.com" target="_blank" className="underline">
-          a16z
-        </Link>{" "}
-        &{" "}
-        <Link
-          href="https://labs.binance.com/en"
-          target="_blank"
-          className="underline"
-        >
-          Binance Labs
-        </Link>
-        . Here&lsquo;s how we&lsquo;re aligning our core offerings {"–"} AutoAir
-        AI Bot
+        Our roadmap is a dynamic blueprint crafted to leverage the synergy
+        between ZKTransfer cutting-edge technology. Here&apos;s how we&apos;re
+        aligning our core offerings with the ZKTransfer.
       </p>
 
       {/* Desktop view with transition */}

@@ -59,7 +59,7 @@ export default function VideoComponent() {
         loop
         muted
         preload="none"
-        poster="/bg/preview.jpg"
+        poster="/bg/preview.png"
       >
         <source
           src={"/video/bg2.mp4"}
