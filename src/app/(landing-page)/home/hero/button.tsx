@@ -11,7 +11,7 @@ export function Button() {
         sendGAEvent({ event: "buttonMeeted", value: "Meet ZKTransfer" });
       }}
       className="flex items-center gap-3 px-[32px] py-[14px] bg-white rounded-full"
-      href={"https://t.me/AutoAirBot"}
+      href={"/"}
       target="_blank"
     >
       <span className="text-[24px] leading-[32px] font-medium">

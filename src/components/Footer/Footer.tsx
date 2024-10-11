@@ -36,7 +36,7 @@ export function Footer() {
         onClick={() => {
           sendGAEvent({ event: "buttonMeeted", value: "Meet ZKTransfer" });
         }}
-        href={"https://t.me/AutoAirBot"}
+        href={""}
         target="_blank"
       >
         <span className="text-[24px] leading-[32px]">Meet ZKTransfer</span>
@@ -57,7 +57,7 @@ export function Footer() {
                     value: "Term of Service",
                   });
                 }}
-                href={"/terms-service"}
+                href={"/"}
                 className="text-[18px] lg:text-[20px] leading-[26px] lg:leading-[28px] text-white"
               >
                 Term and service
@@ -70,7 +70,7 @@ export function Footer() {
                     value: "Privacy policy",
                   });
                 }}
-                href={"/policy"}
+                href={"/"}
                 className="text-[18px] lg:text-[20px] leading-[26px] lg:leading-[28px] text-white"
               >
                 Privacy policy
@@ -112,9 +112,7 @@ export function Footer() {
                     value: "GitBook",
                   });
                 }}
-                href={
-                  "https://autobots-organization.gitbook.io/autoair-ai/getting-started/mission"
-                }
+                href={"/"}
                 target="_blank"
                 className="text-[18px] lg:text-[20px] leading-[26px] lg:leading-[28px] text-white"
               >
@@ -128,7 +126,7 @@ export function Footer() {
                     value: "Blog",
                   });
                 }}
-                href={""}
+                href={"/"}
                 className="text-[18px] lg:text-[20px] leading-[26px] lg:leading-[28px] text-white"
               >
                 Blog
@@ -147,7 +145,7 @@ export function Footer() {
                     value: "Telegram",
                   });
                 }}
-                href={"https://t.me/AutoAirAI"}
+                href={"/"}
                 className="text-[18px] lg:text-[20px] leading-[26px] lg:leading-[28px] text-white"
                 target="_blank"
               >
@@ -169,7 +167,7 @@ export function Footer() {
                     value: "Twitter",
                   });
                 }}
-                href={"https://twitter.com/AutoAirAi_xyz"}
+                href={"/"}
                 target="_blank"
                 className="text-[18px] lg:text-[20px] leading-[26px] lg:leading-[28px] text-white"
               >

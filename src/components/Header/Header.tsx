@@ -36,7 +36,7 @@ export function Header() {
               sendGAEvent({ event: "buttonMeeted", value: "Meet ZKTransfer" });
             }}
             className="marquee flex items-center flex-nowrap gap-[16px] overflow-hidden w-[121px] py-[8px] bg-black rounded-[12px] rounded-br-[4px]"
-            href={"https://t.me/AutoAirBot"}
+            href={""}
             target="_blank"
           >
             {[1, 2].map((item, idx) => {
