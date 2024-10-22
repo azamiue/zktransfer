@@ -8,7 +8,7 @@ export function Button() {
   return (
     <Link
       onClick={() => {
-        sendGAEvent({ event: "buttonMeeted", value: "Meet ZKTransfer" });
+        sendGAEvent({ event: "buttonMeeted", value: " Meet ZKTransfer" });
       }}
       className="flex items-center gap-3 px-[32px] py-[14px] bg-white rounded-full"
       href={"/"}

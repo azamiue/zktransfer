@@ -178,8 +178,7 @@ export const auto_service_data = [
   {
     tag: "01",
     title: "Customer Support",
-    content:
-      "24/7 customer support to assist users with any issues or questions.",
+    content: "Customer support to assist users with any issues or questions.",
   },
   {
     tag: "02",
@@ -255,5 +254,51 @@ export const auto_air_ai_data = [
     network: "BEAM",
     imageUrl: "/network/beam.png",
     data: [{ title: "Transfer" }, { title: "Swap" }],
+  },
+];
+
+export const freemium_data = [
+  {
+    title: "Basic Access: Default Script Utilization",
+    isEligible: true,
+  },
+  {
+    title: "Optimization Performance",
+    isEligible: true,
+  },
+  {
+    title: "Advanced Analytics Analysis",
+    isEligible: false,
+  },
+  {
+    title: "Get Fully API Access",
+    isEligible: false,
+  },
+  {
+    title: "Multiple Wallet Execution",
+    isEligible: false,
+  },
+];
+
+export const premium_data = [
+  {
+    title: "Basic Access: Default Script Utilization",
+    isEligible: true,
+  },
+  {
+    title: "Optimization Performance",
+    isEligible: true,
+  },
+  {
+    title: "Advanced Analytics Analysis",
+    isEligible: true,
+  },
+  {
+    title: "Get Fully API Access",
+    isEligible: true,
+  },
+  {
+    title: "Multiple Wallet Execution",
+    isEligible: true,
   },
 ];

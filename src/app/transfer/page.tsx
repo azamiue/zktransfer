@@ -115,7 +115,7 @@ export default function Home() {
       });
       setValue("loading", false);
     }
-  }, [txSuccess, fail, success, txFail, tx, setValue]);
+  }, [fail, setValue, success, tx, txFail, txSuccess, wallet]);
 
   return (
     <div>

@@ -10,11 +10,7 @@ export function Hero() {
       )}
     >
       <div className="relative z-10 flex-1 flex flex-col justify-center md:justify-start gap-[40px] md:gap-[80px] 2xl:gap-[100px] items-center mt-[40px] md:mt-[80px] 2xl:mt-[100px]">
-        <div className="hidden max-w-[563px] md:flex flex-col items-center gap-[4px] p-4">
-          <p className="text-[40px] leading-[32px] text-white text-center">
-            Hi! We are ZKTransfer
-          </p>
-        </div>
+        <div className="hidden max-w-[563px] md:flex flex-col items-center gap-[4px] p-4"></div>
 
         <Button />
       </div>

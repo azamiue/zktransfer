@@ -4,6 +4,7 @@ import { Automated } from "./home/Automated";
 import { Faq } from "./home/Faq";
 import { Hero } from "./home/hero/Hero";
 import { Introduce } from "./home/Introduce";
+import { AutoAirPrice } from "./home/PricePremium";
 import { TechnicalRoad } from "./home/TechnicalRoad";
 
 export default function MainPage() {
@@ -18,6 +19,8 @@ export default function MainPage() {
       <AutoAirFeature />
 
       <AutoAirService />
+
+      <AutoAirPrice />
 
       <TechnicalRoad />
 

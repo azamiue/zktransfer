@@ -23,7 +23,10 @@ export function Header() {
       )}
     >
       <div className=" flex items-center justify-between gap-[18px] lg:gap-[56px] h-[56px] mx-[24px] md:mx-auto md:w-fit bg-white py-[8px] pr-[16px] pl-[22px] rounded-tr-[20px] rounded-bl-[20px]">
-        <Link href={"/"} className="flex items-center gap-[4px] h-[16px]">
+        <Link
+          href={"https://t.me/quanvnnd"}
+          className="flex items-center gap-[4px] h-[16px]"
+        >
           {/* <Image src="/logo/logo.svg" alt="LOGO" width={28} height={16} /> */}
           <span className="font-medium leading-[16px]">ZKTransfer</span>
         </Link>
@@ -36,7 +39,7 @@ export function Header() {
               sendGAEvent({ event: "buttonMeeted", value: "Meet ZKTransfer" });
             }}
             className="marquee flex items-center flex-nowrap gap-[16px] overflow-hidden w-[121px] py-[8px] bg-black rounded-[12px] rounded-br-[4px]"
-            href={""}
+            href={"https://t.me/quanvnnd"}
             target="_blank"
           >
             {[1, 2].map((item, idx) => {
@@ -53,7 +56,7 @@ export function Header() {
                   />
 
                   <p className="text-[16px] leading-[24px] font-medium text-white">
-                    Meet ZKTransfer
+                    Feedback ZKTransfer
                   </p>
 
                   <Image
@@ -64,7 +67,7 @@ export function Header() {
                   />
 
                   <p className="text-[16px] leading-[24px] font-medium text-white">
-                    Meet ZKTransfer
+                    Feedback ZKTransfer
                   </p>
                 </div>
               );
@@ -85,7 +88,7 @@ export function Header() {
         onClick={() => {
           sendGAEvent({ event: "buttonLaunchapp", value: " Launch App" });
         }}
-        href={"/transfer"}
+        href={"/newuser"}
         className="absolute hidden lg:block right-[24px] top-[4px] px-[24px] py-[12px] rounded-full bg-white text-[15px] leading-[24px] text-black"
       >
         Launch App
