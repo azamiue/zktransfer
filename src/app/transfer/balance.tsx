@@ -68,11 +68,13 @@ export function Balance() {
   }, [toWallet, amount, pk, setValue, setError]);
 
   return (
-    <div className="w-full h-full flex flex-col justify-center items-center gap-y-3">
-      <h1 className="text-[20px] font-semibold">Transfer Function</h1>
+    <div className="w-full h-full flex flex-col justify-center items-start gap-y-3">
+      {/* <h1 className="text-[20px] font-semibold">Transfer Function</h1> */}
       <div>
-        <h1 className="text-[20px]">Your Wallet: {wallet}</h1>
-        <h1 className="text-[20px]">Your Balance: {ether} ETH</h1>
+        <h1 className="text-[18px]">Your Wallet: {wallet}</h1>
+        <h1 className="text-[15px]">
+          Your Balance: {Number(ether).toFixed(3)} ETH
+        </h1>
       </div>
       <div className="flex flex-col items-center justify-center gap-y-3 w-[600px]">
         <Input
