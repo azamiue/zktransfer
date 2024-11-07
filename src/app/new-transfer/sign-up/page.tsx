@@ -21,75 +21,73 @@ export default function LoginNewTransfer() {
       alert("Passwords do not match");
       return;
     } else {
+      alert("Sign up successfully");
       router.push("/new-transfer/sign-in");
     }
   };
 
   return (
-    <div className="w-screen h-screen">
-      <div className="flex flex-col justify-center items-center gap-y-3 w-full h-full">
-        <div className="text-[20px]">Wallet Management With Sign Up</div>
-        <div className="flex items-center justify-center gap-x-3">
-          <div className="flex flex-col gap-y-3">
-            <Input
-              type="string"
-              label="Username or Email"
-              className="w-[500px]"
-              value={username}
-              onChange={(e) => setUserName(e.target.value)}
-            />
-            <Input
-              type={isVisible ? "text" : "password"}
-              label="Password"
-              className="w-[500px]"
-              endContent={
-                <button
-                  className="focus:outline-none"
-                  type="button"
-                  onClick={toggleVisibility}
-                  aria-label="toggle password visibility"
-                >
-                  {isVisible ? (
-                    <EyeSlashFilledIcon className="text-2xl text-default-400 pointer-events-none" />
-                  ) : (
-                    <EyeFilledIcon className="text-2xl text-default-400 pointer-events-none" />
-                  )}
-                </button>
-              }
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-            />
-            <Input
-              type={isVisible ? "text" : "password"}
-              label="Re-enter password"
-              className="w-[500px]"
-              value={rePassword}
-              onChange={(e) => setRePassword(e.target.value)}
-              endContent={
-                <button
-                  className="focus:outline-none"
-                  type="button"
-                  onClick={toggleVisibility}
-                  aria-label="toggle password visibility"
-                >
-                  {isVisible ? (
-                    <EyeSlashFilledIcon className="text-2xl text-default-400 pointer-events-none" />
-                  ) : (
-                    <EyeFilledIcon className="text-2xl text-default-400 pointer-events-none" />
-                  )}
-                </button>
-              }
-            />
-            <div className="mx-auto">
-              <Button
-                color="primary"
-                className="h-[56px]"
-                onClick={handleConfirm}
+    <div className="w-screen h-screen flex justify-center items-center bg-gradient-to-r from-green-400 to-blue-500">
+      <div className="relative p-16 rounded-lg overflow-hidden w-[600px]">
+        <div className="absolute inset-0 border-2 border-transparent border-opacity-50 rounded-lg bg-white/30 backdrop-blur-lg pointer-events-none"></div>
+        <div className="relative z-10 flex flex-col items-center gap-y-4">
+          <div className="text-[20px]">Wallet Management With Sign Up</div>
+          <Input
+            type="string"
+            label="Username or Email"
+            className="w-full"
+            value={username}
+            onChange={(e) => setUserName(e.target.value)}
+          />
+          <Input
+            type={isVisible ? "text" : "password"}
+            label="Password"
+            className="w-full"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            endContent={
+              <button
+                className="focus:outline-none"
+                type="button"
+                onClick={toggleVisibility}
+                aria-label="toggle password visibility"
               >
-                Confirm
-              </Button>
-            </div>
-          </div>
+                {isVisible ? (
+                  <EyeSlashFilledIcon className="text-2xl text-default-400 pointer-events-none" />
+                ) : (
+                  <EyeFilledIcon className="text-2xl text-default-400 pointer-events-none" />
+                )}
+              </button>
+            }
+          />
+          <Input
+            type={isVisible ? "text" : "password"}
+            label="Re-enter password"
+            className="w-full"
+            value={rePassword}
+            onChange={(e) => setRePassword(e.target.value)}
+            endContent={
+              <button
+                className="focus:outline-none"
+                type="button"
+                onClick={toggleVisibility}
+                aria-label="toggle password visibility"
+              >
+                {isVisible ? (
+                  <EyeSlashFilledIcon className="text-2xl text-default-400 pointer-events-none" />
+                ) : (
+                  <EyeFilledIcon className="text-2xl text-default-400 pointer-events-none" />
+                )}
+              </button>
+            }
+          />
+          <Button
+            color="primary"
+            className="h-[56px] mt-4"
+            onClick={handleConfirm}
+          >
+            Confirm
+          </Button>
         </div>
       </div>
     </div>
